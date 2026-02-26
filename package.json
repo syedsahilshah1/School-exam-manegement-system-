@@ -1,0 +1,32 @@
+{
+    "name": "school-examination-system",
+    "version": "1.0.0",
+    "description": "Desktop-Based School Examination Paper Management System",
+    "main": "main.js",
+    "scripts": {
+        "start": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
+        "dev": "vite",
+        "build": "vite build && electron-builder",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Antigravity",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "dotenv": "^16.4.1",
+        "html2canvas": "^1.4.1",
+        "jspdf": "^2.5.1",
+        "jspdf-autotable": "^3.8.1",
+        "mysql2": "^3.9.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.2.1",
+        "concurrently": "^9.2.1",
+        "electron": "^28.3.3",
+        "electron-builder": "^24.9.1",
+        "vite": "^5.1.0",
+        "wait-on": "^9.0.4"
+    }
+}
